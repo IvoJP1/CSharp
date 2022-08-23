@@ -1,0 +1,120 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x;
+            int y;
+            int z;
+            int soma;
+            int sub;
+            int mul;
+            int div;
+            int esc;
+            
+            Console.WriteLine("Digite um Número");
+            x = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Digite outro Número");
+            y = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Digite outro Número");
+            z = Convert.ToInt16(Console.ReadLine());
+
+            if (y == x && y == z)
+            {
+                Console.WriteLine("è tudo igual");
+            }
+            else
+            {
+
+                if ((x > y) && (x > z))
+                {
+                    Console.WriteLine("X é o maior e ");
+                }
+                else if ((z > y) && (z > y))
+                {
+                    Console.WriteLine("Z é o maior e ");
+                }
+                else
+                {
+                    Console.WriteLine("y é o maior e ");
+                }
+
+                if ((x < y) && (x < z))
+                {
+                    Console.WriteLine("X é o menor");
+                }
+                else if ((z < y) && (z < y))
+                {
+                    Console.WriteLine("Z é o menor");
+                }
+                else
+                {
+                    Console.WriteLine("y é o menor");
+                }
+            }
+
+            /*
+
+             if(x == y && y == z)
+             {
+                 Console.WriteLine("O triangulo é equilatero");
+             }
+
+             else if((x==y) || (x == z) || (y == z))
+             {
+                 Console.WriteLine("O triangulo é Isosceles");
+             }
+             else
+             {
+                 Console.WriteLine("O triangulo é escaleno");
+             }
+
+             */
+
+            /*
+            Console.WriteLine("escolha uma operação: 1 - Soma; 2 - Subtração; 3 - Multiplicação; 4 - Divisão");
+            esc = Convert.ToInt16(Console.ReadLine());
+
+            soma = x + y;
+            sub = x - y;
+            mul = x * y;
+            div = x / y;
+
+            if(esc == 1)
+            {
+                Console.WriteLine("A soma é: " + soma);
+            }
+
+            else if(esc == 2)
+            {
+                Console.WriteLine("A subtração é: " + sub);
+            }
+
+            else if(esc == 3)
+            {
+                Console.WriteLine("A multiplicação é: " + mul);
+            }
+            else if(esc == 4)
+            {
+                Console.WriteLine("A divisão é: " + div);
+            }
+            else
+            {
+                Console.WriteLine("Opção inexistente");
+            }
+            */
+
+            Console.ReadKey();
+
+        }
+    }
+}
