@@ -52,7 +52,7 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("X é o menor");
                 }
-                else if ((z < y) && (z < y))
+                else if ((z < x) && (z < y))
                 {
                     Console.WriteLine("Z é o menor");
                 }
