@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x;
+
+            Console.WriteLine("Digite um Número de 1 a 3");
+            x = Convert.ToInt16(Console.ReadLine());
+
+
+            /*
+            switch (x)
+            {
+                case 1:
+                    Console.WriteLine("Foi o 1");
+                    break;
+                case 2:
+                    Console.WriteLine("Foi o 2");
+                    break;
+                case 3:
+                    Console.WriteLine("Foi o 3");
+                    break;
+                default:
+                    Console.WriteLine("vc é burro em");
+                    break;
+
+                    
+            }
+            */
+
+            int total = 0, grandCounter, grandValue = 0;
+
+            while(grandValue != -1)
+            {
+                total = total + grandValue;
+                grandValue = grandValue + 1;
+                Console.WriteLine(total);
+            }
+   
+            
+            Console.ReadKey();
+        }
+    }
+}
