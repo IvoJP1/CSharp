@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x;
+            double y;
+            double z;
+            double km;
+            double kmlitro;
+            double a = 1;
+            
+
+            while (a == 1)
+            {
+                Console.WriteLine("Quilometragem na hora do abastecimento: ");
+                x = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("litros abastecidos: ");
+                y = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Quilometragem no proximo abastecimento: ");
+                z = Convert.ToDouble(Console.ReadLine());
+
+
+                km = z - x;
+                kmlitro = km / y;
+
+                Console.WriteLine("A quantidade de quilometros por litro é: " + kmlitro + "km/L");
+                Console.ReadKey();
+
+                Console.WriteLine("Fazer outro calculo?? sim(1) ou não (2)");
+                a = Convert.ToDouble(Console.ReadLine());
+
+                
+            }
+
+       
+           
+
+            Console.ReadKey();
+            }
+        }
+    }
+
