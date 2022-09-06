@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+
+            for (int counter = 1; counter <= 5; counter++)
+                Console.WriteLine("Mensagem");
+           
+            
+
+
+
+            int cont = 1;
+            do
+            {
+                Console.WriteLine(cont);
+                cont++;
+            } while (cont <= 5);
+
+
+             */
+
+
+            string output = "";
+            for(int count = 1; count <=10; count++)
+            {
+                if (count == 5)
+                    break;
+
+                output += count + " ";
+                Console.WriteLine("Valor: " + output);  
+            }
+
+
+           /*
+
+
+            string output = "";
+            for (int count = 1; count <= 10; count++)
+                {
+                    if (count == 5)
+                        continue;
+
+                output += count + " ";
+                Console.WriteLine("Valor: " + output);
+            }
+
+            */
+
+
+                Console.ReadKey();
+            }
+        }
+    }
