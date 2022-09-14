@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double conta;
+            double saldo;
+            double saldoMaior;
+            double totalItens;
+            double limite;
+            double credito;
+            double totalCreditos;
+
+            Console.WriteLine("Digite o número da sua conta");
+            conta = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite seu saldo");
+            saldo = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o total de itens");
+            totalItens = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o total de créditos");
+            totalCreditos = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o limite de crédito");
+            limite = Convert.ToDouble(Console.ReadLine());
+
+            saldoMaior = saldo + totalItens - totalCreditos;
+            credito = limite - totalCreditos;
+
+            Console.WriteLine("Conta: {0}", conta);
+            Console.WriteLine("Saldo: {0}", saldoMaior);
+            Console.WriteLine("Limite: {0}", limite);
+            if(limite < saldoMaior)
+            {
+                Console.WriteLine("Passou do limite");
+
+            }
+            else
+            {
+                Console.WriteLine("Tudo tranquilo");
+            }
+            Console.ReadKey();
+        }
+    }
+}
