@@ -1,0 +1,192 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[,] nota = new double[6, 2];
+            double media1;
+            double media2;
+            double media3;
+            double media4;
+            double media5;
+            double media6;
+            int apro = 0;
+            int exam = 0;
+            int repro = 0;
+            double mediaSala;
+
+
+            Console.WriteLine("Digite a Primeira nota do primeiro aluno");
+            nota[0, 0] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a Segunda nota do primeiro aluno");
+            nota[0, 1] = Convert.ToDouble(Console.ReadLine());
+
+            media1 = ((nota[0, 0] + nota[0, 1]) / 2);
+
+            Console.WriteLine("A média do primeiro aluno é: {0}\n", media1);
+
+            if (media1 <= 3)
+            {
+                Console.WriteLine("Reprovado\n");
+                repro++;
+            }
+            else if(media1>3 && media1 < 6)
+            {
+                Console.WriteLine("Exame\n");
+                exam++;
+            }
+            else 
+            {
+                Console.WriteLine("Aprovado\n");
+                apro++;
+            }
+           
+            Console.WriteLine("Digite a Primeira nota do segundo aluno");
+            nota[1, 0] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a Segunda nota do segundo aluno");
+            nota[1, 1] = Convert.ToDouble(Console.ReadLine());
+
+            media2 = ((nota[1, 0] + nota[1, 1]) / 2);
+
+            Console.WriteLine("A média do segundo aluno é: {0}\n", media2);
+
+            if (media2 <= 3)
+            {
+                Console.WriteLine("Reprovado\n");
+                repro++;
+            }
+            else if (media2 > 3 && media2 < 6)
+            {
+                Console.WriteLine("Exame\n");
+                exam++;
+            }
+            else 
+            {
+                Console.WriteLine("Aprovado\n");
+                apro++;
+            }
+
+            Console.WriteLine("Digite a Primeira nota do terceiro aluno");
+            nota[2, 0] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a Segunda nota do terceiro aluno");
+            nota[2, 1] = Convert.ToDouble(Console.ReadLine());
+
+            media3 = ((nota[2, 0] + nota[2, 1]) / 2);
+
+            Console.WriteLine("A média do terceiro aluno é: {0}\n", media3);
+
+            if (media3 <= 3)
+            {
+                Console.WriteLine("Reprovado\n");
+                repro++;
+            }
+            else if (media3 > 3 && media3 < 6)
+            {
+                Console.WriteLine("Exame\n");
+                exam++;
+            }
+            else 
+            {
+                Console.WriteLine("Aprovado\n");
+                apro++;
+            }
+
+            Console.WriteLine("Digite a Primeira nota do quarto aluno");
+            nota[3, 0] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a Segunda nota do quarto aluno");
+            nota[3, 1] = Convert.ToDouble(Console.ReadLine());
+
+            media4 = ((nota[3, 0] + nota[3, 1]) / 2);
+
+            Console.WriteLine("A média do quarto aluno é: {0}\n", media4);
+
+            if (media4 <= 3)
+            {
+                Console.WriteLine("Reprovado\n");
+                repro++;
+            }
+            else if (media4 > 3 && media4 < 6)
+            {
+                Console.WriteLine("Exame\n");
+                exam++;
+            }
+            else 
+            {
+                Console.WriteLine("Aprovado\n");
+                apro++;
+            }
+
+
+            Console.WriteLine("Digite a Primeira nota do quinto aluno");
+            nota[4, 0] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a Segunda nota do quinto aluno");
+            nota[4, 1] = Convert.ToDouble(Console.ReadLine());
+
+            media5 = ((nota[4, 0] + nota[4, 1]) / 2);
+
+            Console.WriteLine("A média do quinto aluno é: {0}\n", media5);
+
+            if (media5 <= 3)
+            {
+                Console.WriteLine("Reprovado\n");
+                repro++;
+            }
+            else if (media5 > 3 && media5 < 6)
+            {
+                Console.WriteLine("Exame\n");
+                exam++;
+            }
+            else 
+            {
+                Console.WriteLine("Aprovado\n");
+                apro++;
+            }
+
+            Console.WriteLine("Digite a Primeira nota do sexto aluno");
+            nota[5, 0] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a Segunda nota do sexto aluno");
+            nota[5, 1] = Convert.ToDouble(Console.ReadLine());
+
+            media6 = ((nota[5, 0] + nota[5, 1]) / 2);
+
+            Console.WriteLine("A média do sexto aluno é: {0}\n", media6);
+
+            if (media6 <= 3)
+            {
+                Console.WriteLine("Reprovado\n");
+                repro++;
+            }
+            else if (media6 > 3 && media6 < 6)
+            {
+                Console.WriteLine("Exame\n");
+                exam++;
+            }
+            else 
+            {
+                Console.WriteLine("Aprovado\n");
+                apro++;
+            }
+
+            Console.WriteLine("Um total de {0} alunos foram aprovados\n", apro);
+            Console.WriteLine("Um total de {0} alunos ficaram de exame\n", exam);
+            Console.WriteLine("Um total de {0} alunos foram reprovados\n", repro);
+
+            mediaSala = ((media1 + media2 + media3 + media4 + media5 + media6)/6);
+
+
+            Console.WriteLine("A média da sala é: {0}\n", mediaSala);
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
