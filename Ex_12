@@ -1,0 +1,139 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace aula_13_09
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int[] xpto; //unidimensional = vetor declaração de array
+
+
+
+           xpto = new int[10];
+
+
+
+           //int[] array1 =
+
+
+
+           int[,] xpto1 = new int[10,10]; //bidimensional = matriz
+
+
+
+           Console.WriteLine(xpto1.Rank);
+            Console.ReadKey();
+            
+            // new = operador
+
+
+
+           //xpto = new int[100];
+            //xpto1 = new int[10, 10];
+
+
+
+           //int[] xpto = new int [100];
+
+
+
+           /*
+            xpto[0] = 10;
+            xpto[1] = 20;
+
+
+
+           xpto1[9, 9] = 100;
+
+
+
+          */
+
+
+
+           /* SÓ PARA VETOR!!!!
+            string[] xpto = { "10", "20", "30" };
+            foreach (string num in xpto)
+            {
+                Console.WriteLine("{0}", num);
+            }
+            */
+
+
+
+           // "O valor da variável {0} somado a {1} é {2}", x, y, z
+
+
+
+           int[] xpto2 = { 10, 20, 30, 40, 50 };
+
+
+
+           //procura um valor em um array
+            /*int obj = 40;
+            int valor = Array.BinarySearch(xpto2, obj);
+            if(valor < 0)
+            {
+                Console.WriteLine("O objeto ({0}) não foi encontrado");
+            }
+            else
+            {
+                Console.WriteLine("O objeto ({0}) está no índice {1}.", obj, valor);
+            }
+
+
+
+           Console.ReadKey();
+            */
+            int[] array1 = { 10, 20, 30, 40 };
+            int[] array2 = new int[4];
+
+
+
+
+            Array.Clear(array1, 2, 1);
+            foreach(int i in array1)
+            {
+                Console.WriteLine("{0}", i);
+            }
+
+
+
+           Console.ReadKey();
+
+
+
+           Array.Copy(array1, array2, 2);
+            foreach (int i in array2)
+            {
+                Console.WriteLine("{0}", i);
+            }
+
+
+
+           Console.ReadKey();
+
+
+
+           Console.WriteLine("SORT!!!!!!!!!!!!!");
+            int[] xpto4 = { 45, 10, 7, 9, 36, 48, 101, 56, 8, 8 };
+            Array.Sort(xpto4);
+            foreach (int i in xpto4)
+            {
+                Console.WriteLine("{0}", i);
+            }
+
+
+
+           Console.ReadKey();
+        }
+    }
+}
